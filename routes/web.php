@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// visit http://localhost/writeareview/biz/9xyjvSkidMTngtyZ6-Upaw
+Route::get('/writeareview/biz/{bizId}', function () {
+    return view('write-review');
+});
+
+Route::post('/write-a-review', function() {
+    dd('Review posted');
 });
